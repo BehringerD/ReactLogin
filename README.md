@@ -1,16 +1,7 @@
-# React + Vite
+This is sample project repository for a job application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project desciption
+This project is a simple login page without functionality focusing on html/css semantics that follows a given design. This project will use React + Tailwind to achieve the desired results and showcase the use of these frameworks.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Disclaimer:
+Obviously for the project, React + Vite is absolute overkill, however I wanted to practice React development, and see first hand what are the main differences.
