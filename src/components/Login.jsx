@@ -2,6 +2,8 @@ import React from 'react'
 // import image files
 import googleLogo from "../assets/Google-icon.svg"
 import xLogo from "../assets/Xlogo.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
   return (
@@ -87,7 +89,7 @@ const Login = () => {
                 focus-visible:ring-4 
                 focus-visible:ring-blue-200 " placeholder="************" required/>
                 <button type="button" aria-label="Jelszó megjelenítése" className="absolute right-3 top-1/2 -translate-y-1/2 rounded p-2 text-slate-500 hover:bg-slate-100">
-                  👁
+                    <FontAwesomeIcon className="opacity-50" icon={faEyeSlash} />
                 </button>
               </div>
             </div>

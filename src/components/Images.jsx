@@ -2,6 +2,7 @@ import React from 'react'
 // import image files
 import logo from "../assets/tempus-logo.svg"
 import grid from "../assets/grid.svg"
+
 const Images = () => {
   return (
     <div className="grid items-center xs:rounded-b-lg sm:rounded-b-lg md:rounded-b-lg lg:rounded-r-lg lg:rounded-l-none bg-[#161950] p-4 text-white">
