@@ -6,3 +6,26 @@
 .x-logo  {
   filter: invert(1);
 }
+.tempus_logo {
+  opacity: 0;
+  transform: translateY(10pt);
+
+  animation: fadeIn 1s forwards;
+}
+.tempus_text {
+  opacity: 0;
+  animation: textFadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes textFadeIn {
+  to {
+    opacity: 0.5;
+  }
+}

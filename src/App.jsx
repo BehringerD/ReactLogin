@@ -8,7 +8,7 @@ const App = () => {
     // Main element
     <>
       {/* Initial 2 column grid setup. */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 m-10 border-2 border-slate-200 rounded-lg shadow-lg">
 
         {/* Left column with form. */}
         <div className="flex items-center justify-center px-6 py-10 sm:px-10">
@@ -27,7 +27,7 @@ const App = () => {
           <form className="space-y-5">
 
             {/* Name. */}
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
 
               <div>
                 <label
@@ -44,7 +44,7 @@ const App = () => {
                   className="w-full rounded-xl border border-slate-300 px-4 py-3
                          outline-none transition
                          focus-visible:ring-4
-                         focus-visible:ring-indigo-200
+                         focus-visible:ring-blue-200
                          "
                   placeholder="Teszt" required/>
               </div>
@@ -60,7 +60,7 @@ const App = () => {
                 <input id="firstName" name="firstName" type="text" autoComplete="given-name" className="w-full rounded-xl border border-slate-300 px-4 py-3
                         outline-none transition
                         focus-visible:ring-4
-                        focus-visible:ring-indigo-200"
+                        focus-visible:ring-blue-200"
                   placeholder="Elek" required/>
               </div>
 
@@ -74,7 +74,7 @@ const App = () => {
               </label> 
               <input id="email" name="email" type="email" autoComplete="email" className="w-full rounded-xl border border-slate-300 px-4 py-3 focus-visible:ring-4 
               outline-none transition
-              focus-visible:ring-indigo-200 
+              focus-visible:ring-blue-200 
               " placeholder="example@mail.com" required/>
             </div>
 
@@ -89,7 +89,7 @@ const App = () => {
                 <input id="password" name="password" type="password" autoComplete="new-password" className="w-full rounded-xl border border-slate-300 px-4 py-3 pr-12 
                 outline-none transition
                 focus-visible:ring-4 
-                focus-visible:ring-indigo-200 " placeholder="************" required/>
+                focus-visible:ring-blue-200 " placeholder="************" required/>
                 <button type="button" aria-label="Jelszó megjelenítése" className="absolute right-3 top-1/2 -translate-y-1/2 rounded p-2 text-slate-500 hover:bg-slate-100">
                   👁
                 </button>
@@ -116,13 +116,13 @@ const App = () => {
 
             {/* Submit */}
             <button
-              type="submit" className="w-full transition rounded-xl bg-indigo-600 px-5 py-3  text-white hover:bg-indigo-700 focus-visible:ring-4 focus-visible:ring-indigo-300">
+              type="submit" className="w-full transition rounded-xl bg-blue-600 px-5 py-3  text-white hover:bg-blue-700 focus-visible:ring-4 focus-visible:ring-blue-300">
               Regisztráció
             </button>
 
             {/* Social logins */}
             <p className="text-center text-sm text-slate-600">
-              Már van fiókja? <a href="#" className="font-semibold text-indigo-600 hover:underline"> Bejelentkezés
+              Már van fiókja? <a href="#" className="font-semibold text-blue-600 hover:underline"> Bejelentkezés
 </a>
             </p>
 
@@ -155,10 +155,10 @@ const App = () => {
         </div>
       </div>
         {/* Right Column with graphics */}
-        <div className="grid items-center    bg-[#161950] p-4 text-white">
-            <div className="">
-              <img src={logo} alt="" style={{'--image-url': `url(${grid})`}} className="px-30 bg-center bg-no-repeat bg-[image:var(--image-url)]"/>
-              <p className="opacity-50 text-center">Közös küldetés</p>
+        <div className="grid items-center md:rounded-b-lg lg:rounded-r-lg lg:rounded-l-none bg-[#161950] p-4 text-white">
+            <div className="text-center flex flex-col items-center justify-center">
+              <img src={logo} alt="" style={{'--image-url': `url(${grid})`}} className="center tempus_logo max-w-80 bg-center bg-no-repeat bg-[image:var(--image-url)]"/>
+              <p className="tempus_text opacity-50 text-center">Közös küldetés</p>
             </div>
         </div>
       </div>
