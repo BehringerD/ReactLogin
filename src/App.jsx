@@ -16,6 +16,7 @@ const App = () => {
         <Login />
         {/* Right Column with graphics */}
         <Images />
+        
       </div>
     </>
   )

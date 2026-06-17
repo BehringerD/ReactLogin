@@ -8,7 +8,7 @@ import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 const Login = () => {
   return (
     <div>
-
+        {/* Header. */}
         <div className="flex items-center justify-center px-6 py-10 sm:px-10">
         <div className="w-full max-w-md">
 
@@ -89,7 +89,7 @@ const Login = () => {
                 focus-visible:ring-4 
                 focus-visible:ring-blue-200 " placeholder="************" required/>
                 <button type="button" aria-label="Jelszó megjelenítése" className="absolute right-3 top-1/2 -translate-y-1/2 rounded p-2 text-slate-500 hover:bg-slate-100">
-                    <FontAwesomeIcon className="opacity-50" icon={faEyeSlash} />
+                    <FontAwesomeIcon className="transition opacity-50" icon={faEyeSlash} />
                 </button>
               </div>
             </div>
@@ -114,7 +114,9 @@ const Login = () => {
 
             {/* Submit */}
             <button
-              type="submit" className="w-full transition rounded-xl bg-blue-600 px-5 py-3  text-white hover:bg-blue-700 focus-visible:ring-4 focus-visible:ring-blue-300">
+              aria-label="Regisztráció"
+              type="submit" 
+              className="w-full transition rounded-xl bg-blue-600 px-5 py-3  text-white hover:bg-blue-700 focus-visible:ring-4 focus-visible:ring-blue-300">
               Regisztráció
             </button>
 
@@ -134,13 +136,13 @@ const Login = () => {
             {/* Social */}
             <div className="grid gap-3 sm:grid-cols-2">
 
-              <button type="button" className="bg-slate-100 transition rounded-xl py-2 px-4 hover:bg-slate-200">
+              <button aria-label="Google fiókkal való bejelentkezés" type="button" className="bg-slate-100 transition rounded-xl py-2 px-4 hover:bg-slate-200">
                 <div className="inline-flex text-center items-center py-2 px-4">
                   <img src={googleLogo} alt="Google" className="fill-current w-5 h-5 mr-2"/><span> Google fiókkal</span>
                 </div>
               </button>
 
-              <button type="button" className="bg-slate-100 transition rounded-xl py-2 px-4 hover:bg-slate-200">
+              <button aria-label="X fiókkal való bejelentkezés" type="button" className="bg-slate-100 transition rounded-xl py-2 px-4 hover:bg-slate-200">
                 <div className="inline-flex text-center items-center py-2 px-4">
                   <img src={xLogo} alt="X" className="x-logo text-black fill-current w-5 h-5 mr-2"/>
                   <span> X fiókkal</span>
