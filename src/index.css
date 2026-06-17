@@ -3,3 +3,6 @@
 :root {
   --font-sans: Outfit, sans-serif;
 }
+.x-logo  {
+  filter: invert(1);
+}
