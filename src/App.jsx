@@ -10,13 +10,13 @@ const App = () => {
     // Main element
     <>
       {/* Initial 2 column grid setup. */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 m-10 border-2 border-slate-200 rounded-lg shadow-lg">
+      <div className="grid grid-cols-1 lg:grid-cols-2 m-4 border-2 border-slate-200 rounded-lg shadow-lg">
         
         {/* Left column with form. */}
         <Login />
         {/* Right Column with graphics */}
         <Images />
-        
+
       </div>
     </>
   )
