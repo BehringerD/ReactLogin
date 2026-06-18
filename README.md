@@ -1,7 +1,7 @@
 # tempus_login
 This is sample project repository for a job application
 
-<h3>Project desciption</h3>
+<h3>Project description</h3>
 <p>This project is a simple login page without functionality focusing on html/css semantics that follows a given design. This project will use React + Tailwind to achieve the desired results and showcase the use of these frameworks</p> 
 <h3>Disclaimer</h3>
 <p>Obviously for the project, React + Vite is absolute overkill, however I wanted to practice React development, and see first hand what are the main differences compared to my confort zone: Vue + Bootstrap. I also avoided using ai, altough in hindsight it would have halved production time, but I wouldn't have gained any expereince</p>
